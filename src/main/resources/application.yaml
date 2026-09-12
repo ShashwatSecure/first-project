@@ -5,3 +5,9 @@ spring:
     google:
       genai:
         api-key: ${GENAI_API_KEY}
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${OAUTH2_ISSUER_URI}
+          audience: ${OAUTH2_AUDIENCE}
